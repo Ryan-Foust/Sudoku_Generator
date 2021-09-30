@@ -13,6 +13,17 @@ public class Play {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // line
+        // Read from file or generate a new one?
+        int control = Integer.parseInt(args[0]);
+
+        // read from file
+        if (control == 0) {
+
+        }
+
+        // generate a new one
+        else {
+
+        }
     }
 }
