@@ -14,16 +14,31 @@ public class Play {
      */
     public static void main(String[] args) {
         // Read from file or generate a new one?
-        int control = Integer.parseInt(args[0]);
+        int control = 0;    // will just read from a file for now
+        // for consistent results in setting up the board properly
+
+        build(control);
+
+        printRules();
+    }
+
+    public static void printRules () {
+        System.out.println("The rules of Sudoku are simple.");
+        System.out.println("The numbers 1-9 can only appear once per row, " +
+                "once per column, and once per section.");
+    }
+
+    public static void build (int control) {
 
         // read from file
         if (control == 0) {
-
+            Setup.fileRead();
         }
+
 
         // generate a new one
         else {
-
+            Setup.generateNew();
         }
     }
 }
