@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Play {
     /**
      * Need to work out a consistent coordinate system to be able to work with the user properly.
@@ -8,6 +9,7 @@ public class Play {
 
     // This will be the main file to start on. Once started, will call Setup to set up the board.
 
+    public static Board board;
 
     /**
      * @param args the command line arguments
@@ -20,6 +22,8 @@ public class Play {
         build(control);
 
         printRules();
+
+        showBoard();
     }
 
     public static void printRules () {
@@ -29,10 +33,9 @@ public class Play {
     }
 
     public static void build (int control) {
-
         // read from file
         if (control == 0) {
-            Setup.fileRead();
+            board = Setup.fileRead();
         }
 
 
@@ -40,5 +43,8 @@ public class Play {
         else {
             Setup.generateNew();
         }
+    }
+    public static void showBoard () {
+        System.out.println(board.toString());
     }
 }

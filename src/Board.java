@@ -9,9 +9,8 @@ public class Board {
         // duh, game just started
         complete = false;
 
-        /**
-         * Use Section sect# = new Section(); and the like here
-         */
+        // todo for loop and nested for loop (col, row) to put numbers in correct block
+
     }
 
     /**
@@ -29,8 +28,27 @@ public class Board {
         complete = true;
     }
 
+    /**
+     * checks specified row for duplicate numbers
+     * @return whether the check passes (no duplicate numbers in the row)
+     */
+    public boolean checkRow (int row) {
+        // todo finish checkRow
+        return false;
+    }
+
+    /**
+     * checks specified column for duplicate numbers
+     * @return whether the check passes (no duplicate numbers in the column)
+     */
+    public boolean checkColumn (int col) {
+        // todo finish checkColumn
+        return false;
+    }
+
     @Override
     public String toString() {
+        // todo finish override toString method in Board
         return "";
     }
 }
