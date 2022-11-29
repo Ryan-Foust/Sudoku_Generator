@@ -7,7 +7,7 @@ public class Play {
      * while [Number to Put] would be 1-9
      */
 
-    // This will be the main file to start on. Once started, will call Setup to set up the board.
+    // This will be the main file to start on.
 
     public static Board board;
 

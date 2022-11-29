@@ -1,12 +1,11 @@
 public class Board {
     /**
-     * This is the entire sudoku board, made up of 9 sections of 9 blocks for each section.
+     * This is the entire 9x9 sudoku board.
      */
 
     private boolean complete; // move this to Play class (probably)
 
     public Board() {
-        // duh, game just started
         complete = false;
         /*
         Put file-reading stuff here
@@ -21,6 +20,8 @@ public class Board {
      * @return Is the game complete?
      */
     public boolean getPlayerWin() {
+        // todo move getPlayerWin() to Play
+        // may remove entirely
         return complete;
     }
 
@@ -28,24 +29,33 @@ public class Board {
      * Flips the complete field above
      */
     public void setPlayerWin() {
+        // todo move setPlayerWin() to Play
+        // may remove entirely
         complete = true;
     }
 
     /**
-     * checks specified row for duplicate numbers
-     * @return whether the check passes (no duplicate numbers in the row)
+     * Test if the specified row has duplicate numbers
+     * @param row The row to check
+     * @param num The number that must not already exist in row
+     * @return Whether there is a duplicate of the number provided
      */
-    public boolean checkRow (int row) {
+    public boolean checkRow (int row, int num) {
         // todo finish checkRow
         return false;
     }
 
     /**
-     * checks specified column for duplicate numbers
-     * @return whether the check passes (no duplicate numbers in the column)
+     * Test if the specified column has duplicate numbers
+     * @param col The column to check
+     * @param num The number that must not already exist in column
+     * @return Whether there is a duplicate of the number provided
      */
-    public boolean checkColumn (int col) {
+    public boolean checkColumn (int col, int num) {
         // todo finish checkColumn
+        /*
+        Place pseudocode here
+         */
         return false;
     }
 
