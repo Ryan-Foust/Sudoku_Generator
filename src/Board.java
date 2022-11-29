@@ -3,14 +3,12 @@ public class Board {
      * This is the entire sudoku board, made up of 9 sections of 9 blocks for each section.
      */
 
-    private boolean complete;
+    private boolean complete; // move this to Play class (probably)
 
     public Board() {
-        // duh, game just started
         complete = false;
-
-        /**
-         * Use Section sect# = new Section(); and the like here
+        /*
+        Put file-reading stuff here
          */
     }
 

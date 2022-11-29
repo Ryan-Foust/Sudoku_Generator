@@ -1,5 +1,5 @@
 public class Play {
-    /**
+    /*
      * Need to work out a consistent coordinate system to be able to work with the user properly.
      * ([Section], [Block], [Number to Put]) may work, but will need to trial a bunch of times to see how well this
      * works. May get confusing because [Section] and [Block] would be labelled 0-8,
@@ -17,6 +17,7 @@ public class Play {
         int control = 0;    // will just read from a file for now
         // for consistent results in setting up the board properly
 
+        // Replace with Board object??
         build(control);
 
         printRules();
